@@ -13,7 +13,7 @@ RUN apt-get update \
 
 # Build mod-ui
 RUN echo 2
-RUN git clone https://github.com/ajboni/mod-ui.git /mod/mod-ui
+RUN git clone https://github.com/MacigMarco/mod-ui.git /mod/mod-ui
 RUN pip3 install -r /mod/mod-ui/requirements.txt
 RUN make -C /mod/mod-ui/utils 
 RUN chown :audio -R /mod/mod-ui && chmod -R 775 /mod/mod-ui
