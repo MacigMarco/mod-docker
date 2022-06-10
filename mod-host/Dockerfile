@@ -10,7 +10,7 @@ RUN dpkg --purge kxstudio-repos-gcc5
 RUN wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_10.0.3_all.deb
 RUN dpkg -i kxstudio-repos_10.0.3_all.deb
 RUN apt-get update && apt-get install -y --no-install-recommends \
-	jackd2 git liblilv-dev libreadline-dev lilv-utils libjack-jackd2-dev python python3.6 python3.6
+	jackd2 git liblilv-dev libreadline-dev lilv-utils libjack-jackd2-dev python3.6 python3.6
 
 # Build mod-host
 RUN git clone https://github.com/moddevices/mod-host.git /mod/mod-host/source
